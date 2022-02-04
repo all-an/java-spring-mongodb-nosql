@@ -25,7 +25,7 @@ public class User implements Serializable {
 		this.email = email;
 	}
 
-	public String getId() {
+	public String getId()  {
 		return id;
 	}
 
