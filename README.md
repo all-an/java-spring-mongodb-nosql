@@ -6,6 +6,18 @@
 
 ## Java Spring Boot / MongoDB / NoSQL 
 
+### in progress
 
 ### Posts and Comments API
+
+Requirements: 
+- Java 11
+- Spring Boot
+- MongoDB 5
+
+<p align="center">
+        <a href="https://www.linkedin.com/in/all-an/">
+        <img align="center" width="691" height="198"  src="/img/img1.png" />
+</a>
+</p>
 
