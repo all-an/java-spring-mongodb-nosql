@@ -1,0 +1,25 @@
+documents
+
+{"_id":{"$oid":"61fda7993a684b7047a5fb94"},"nome":"Maria Brown","email":"maria@gmail.com"}
+
+{"_id":{"$oid":"61fda8db3a684b7047a5fb95"},"name":"Alex Green","email":"alex@gmail.com"}
+
+_id
+:
+61fda7993a684b7047a5fb94
+nome
+:
+"Maria Brown"
+email
+:
+"maria@gmail.com"
+
+_id
+:
+61fda8db3a684b7047a5fb95
+name
+:
+"Alex Green"
+email
+:
+"alex@gmail.com"
