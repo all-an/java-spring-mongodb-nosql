@@ -5,9 +5,6 @@
 ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 
 ## Java Spring Boot / MongoDB / NoSQL 
-
-### /
-
 ### Posts and Comments API
 
 Requirements: 
@@ -20,8 +17,8 @@ Requirements:
 
 ```xml
 <dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-data-mongodb</artifactId>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-data-mongodb</artifactId>
 </dependency>
 
 ```
@@ -32,3 +29,55 @@ Requirements:
 </a>
 </p>
 
+#### Simple sample Enconding String in JS: ( for later consult )
+
+```js
+encodeURIComponent("Allan Pereira Abrahão")
+'Allan%20Pereira%20Abrah%C3%A3o'
+```
+
+#### URL decoder class in Java (this project):
+
+```java
+package com.project.resources.util.URL;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.TimeZone;
+
+public class URL {
+
+	public static String decodeParam(String text) {
+		try {
+			return URLDecoder.decode(text, "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			return "";
+		}
+	}
+	
+	public static Date convertDate(String textDate, Date defaultValue) {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
+		try {
+			return sdf.parse(textDate);
+		} catch (ParseException e) {
+			return defaultValue;
+		}		
+	}
+}
+
+```
+
+
+### Title Search and Full Search sample endpoints:
+
+```bash
+
+localhost:8080/posts/titlesearch?text=bom%20dia
+
+
+
+```
