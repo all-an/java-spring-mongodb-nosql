@@ -6,7 +6,7 @@
 
 ## Java Spring Boot / MongoDB / NoSQL 
 
-### in progress
+### /
 
 ### Posts and Comments API
 
