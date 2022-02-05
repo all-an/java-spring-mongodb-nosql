@@ -15,6 +15,17 @@ Requirements:
 - Spring Boot
 - MongoDB 5
 
+
+### MongoDB dependency:
+
+```xml
+<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-data-mongodb</artifactId>
+</dependency>
+
+```
+
 <p align="center">
         <a href="https://www.linkedin.com/in/all-an/">
         <img align="center" width="691" height="198"  src="/img/img1.png" />
