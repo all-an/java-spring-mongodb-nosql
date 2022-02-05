@@ -9,5 +9,4 @@ public class JavaSpringMongodbNosqlApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(JavaSpringMongodbNosqlApplication.class, args);
 	}
-
 }
