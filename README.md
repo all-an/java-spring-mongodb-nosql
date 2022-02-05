@@ -78,6 +78,24 @@ public class URL {
 
 localhost:8080/posts/titlesearch?text=bom%20dia
 
-
+localhost:8080/posts/fullsearch?text=bom&maxDate=2022-05-02
 
 ```
+### Post Repository Methods:
+#### Search and Find :
+
+```java
+        @Query("{ 'title': { $regex: ?0, $options: 'i' } }")
+	List<Post> searchTitle(String text);
+	
+	List<Post> findByTitleContainingIgnoreCase(String text);
+	
+	@Query("{ $and: [ { date: {$gte: ?1} }, { date: { $lte: ?2} } , { $or: [ { 'title': { $regex: ?0, $options: 'i' } }, { 'body': { $regex: ?0, $options: 'i' } }, { 'comments.text': { $regex: ?0, $options: 'i' } } ] } ] }")
+	List<Post> fullSearch(String text, Date minDate, Date maxDate);
+```
+
+### MongoDB Regex Reference:
+
+https://docs.mongodb.com/manual/reference/operator/query/regex/
+https://docs.mongodb.com/manual/reference/operator/query-logical/
+https://docs.mongodb.com/manual/reference/operator/query-comparison/
