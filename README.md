@@ -7,7 +7,7 @@
 ## Java Spring Boot / MongoDB / NoSQL 
 ### Posts and Comments API
 
-Requirements: 
+Requirements : 
 - Java 11
 - Spring Boot
 - MongoDB 5
